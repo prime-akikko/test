@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lds14"
+version = "0.1.0"
+description = "UART client for LDRobot LD14 / LD14P (LDS14 Mini) 360° LiDAR modules"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Akiko" }]
+keywords = ["lidar", "ld14", "ld14p", "lds14", "ldrobot", "uart"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: System :: Hardware",
+  "Topic :: Scientific/Engineering",
+]
+dependencies = []
+
+[project.optional-dependencies]
+serial = ["pyserial>=3.5"]
+dev = ["pyserial>=3.5"]
+
+[project.urls]
+Documentation = "https://github.com/prime-akikko/test"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+lds14 = ["py.typed"]
