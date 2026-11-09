@@ -1,6 +1,0 @@
-
-[dev]
-pyserial>=3.5
-
-[serial]
-pyserial>=3.5
